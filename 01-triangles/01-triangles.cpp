@@ -80,7 +80,9 @@ void display()
 	static const float black[] = { 0.0f, 0.0f, 0.0f, 0.0f };
 	glClearBufferfv(GL_COLOR, 0, black);
 	glBindVertexArray(VAOs[Triangles]);
-	glDrawArrays(GL_TRIANGLES, 0, NumVertices);
+
+	// 跟书上说的不一样，GL_PATCHES 是有显示的，与 GL_POINTS 效果一样
+	glDrawArrays(GL_TRIANGLES /*GL_POINTS*/ /*GL_LINES*/ /*GL_PATCHES*/, 0, NumVertices);
 }
 
 
