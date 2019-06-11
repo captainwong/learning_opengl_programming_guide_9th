@@ -3,7 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-triangles", "01-triangles\01-triangles.vcxproj", "{92B9E5FE-7A4D-4702-9176-CE816EED0407}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gl3w_etc", "gl3w_etc\gl3w_etc.vcxproj", "{06C36702-054E-43D2-A3A8-E9F1070BB8D5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "boxes", "..\..\Qt\Qt5.10.1\Examples\Qt-5.10.1\widgets\graphicsview\boxes\boxes.vcxproj", "{5FEF65AF-B8DA-3819-91A6-59FCBDB6A1D7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92B9E5FE-7A4D-4702-9176-CE816EED0407}.Debug|x64.ActiveCfg = Debug|x64
+		{92B9E5FE-7A4D-4702-9176-CE816EED0407}.Debug|x64.Build.0 = Debug|x64
+		{92B9E5FE-7A4D-4702-9176-CE816EED0407}.Debug|x86.ActiveCfg = Debug|Win32
+		{92B9E5FE-7A4D-4702-9176-CE816EED0407}.Debug|x86.Build.0 = Debug|Win32
+		{92B9E5FE-7A4D-4702-9176-CE816EED0407}.Release|x64.ActiveCfg = Release|x64
+		{92B9E5FE-7A4D-4702-9176-CE816EED0407}.Release|x64.Build.0 = Release|x64
+		{92B9E5FE-7A4D-4702-9176-CE816EED0407}.Release|x86.ActiveCfg = Release|Win32
+		{92B9E5FE-7A4D-4702-9176-CE816EED0407}.Release|x86.Build.0 = Release|Win32
+		{06C36702-054E-43D2-A3A8-E9F1070BB8D5}.Debug|x64.ActiveCfg = Debug|x64
+		{06C36702-054E-43D2-A3A8-E9F1070BB8D5}.Debug|x64.Build.0 = Debug|x64
+		{06C36702-054E-43D2-A3A8-E9F1070BB8D5}.Debug|x86.ActiveCfg = Debug|Win32
+		{06C36702-054E-43D2-A3A8-E9F1070BB8D5}.Debug|x86.Build.0 = Debug|Win32
+		{06C36702-054E-43D2-A3A8-E9F1070BB8D5}.Release|x64.ActiveCfg = Release|x64
+		{06C36702-054E-43D2-A3A8-E9F1070BB8D5}.Release|x64.Build.0 = Release|x64
+		{06C36702-054E-43D2-A3A8-E9F1070BB8D5}.Release|x86.ActiveCfg = Release|Win32
+		{06C36702-054E-43D2-A3A8-E9F1070BB8D5}.Release|x86.Build.0 = Release|Win32
+		{5FEF65AF-B8DA-3819-91A6-59FCBDB6A1D7}.Debug|x64.ActiveCfg = Debug|Win32
+		{5FEF65AF-B8DA-3819-91A6-59FCBDB6A1D7}.Debug|x86.ActiveCfg = Debug|Win32
+		{5FEF65AF-B8DA-3819-91A6-59FCBDB6A1D7}.Debug|x86.Build.0 = Debug|Win32
+		{5FEF65AF-B8DA-3819-91A6-59FCBDB6A1D7}.Release|x64.ActiveCfg = Release|Win32
+		{5FEF65AF-B8DA-3819-91A6-59FCBDB6A1D7}.Release|x86.ActiveCfg = Release|Win32
+		{5FEF65AF-B8DA-3819-91A6-59FCBDB6A1D7}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
