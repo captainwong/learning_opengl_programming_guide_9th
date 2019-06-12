@@ -64,8 +64,8 @@ void Window::paintGL()
 	constexpr GLuint NumVertices = 6;
 
 	GLfloat vertices[NumVertices][2] = {
-		{ -0.90f, -0.90f }, { 0.85f, -0.90f }, { -0.90f, 0.85f }, // vertex 1
-		{ 0.90f, -0.85f, }, { 0.90f, 0.90f }, { -0.85f, 0.90f }, // vertex 2
+		{ -0.90f, -0.90f }, { 0.85f, -0.90f }, { -0.90f, 0.85f }, // Triangle 1
+		{ 0.90f, -0.85f, }, { 0.90f, 0.90f }, { -0.85f, 0.90f }, // Triangle 2
 	};
 
 	GLuint vPosition = program->attributeLocation("vPosition");
