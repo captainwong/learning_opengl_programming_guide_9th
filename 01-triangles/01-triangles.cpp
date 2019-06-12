@@ -1,4 +1,4 @@
-// 01-triangles.cpp : This file contains the 'main' function. Program execution begins and ends there.
+ï»¿// 01-triangles.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include "pch.h"
@@ -81,7 +81,7 @@ void display()
 	glClearBufferfv(GL_COLOR, 0, black);
 	glBindVertexArray(VAOs[Triangles]);
 
-	// ¸úÊéÉÏËµµÄ²»Ò»Ñù£¬GL_PATCHES ÊÇÓĞÏÔÊ¾µÄ£¬Óë GL_POINTS Ğ§¹ûÒ»Ñù
+	// è·Ÿä¹¦ä¸Šè¯´çš„ä¸ä¸€æ ·ï¼ŒGL_PATCHES æ˜¯æœ‰æ˜¾ç¤ºçš„ï¼Œä¸ GL_POINTS æ•ˆæœä¸€æ ·
 	glDrawArrays(GL_TRIANGLES /*GL_POINTS*/ /*GL_LINES*/ /*GL_PATCHES*/, 0, NumVertices);
 }
 
