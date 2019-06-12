@@ -55,6 +55,8 @@ void main()
 	program->bind();
 }
 
+#define USE_BUFFER
+
 void Window::paintGL()
 {
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
@@ -67,7 +69,16 @@ void Window::paintGL()
 	};
 
 	GLuint vPosition = program->attributeLocation("vPosition");
+
+#ifdef USE_BUFFER
+	buffer.create();
+	buffer.bind();
+	buffer.allocate(vertices, sizeof(vertices));
+	program->setAttributeBuffer(vPosition, GL_FLOAT, 0, 2);
+#else	
 	program->setAttributeArray(vPosition, GL_FLOAT, vertices, 2);
+#endif
+
 	program->enableAttributeArray(vPosition);
 
 	glDrawArrays(GL_TRIANGLES, 0, NumVertices);
